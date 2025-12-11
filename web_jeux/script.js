@@ -59,12 +59,11 @@ function motCouleur(rectangle) {
 }
 
 function comparer(motTexte, couleurNom) {
-    if (!motTexte || !couleurNom) return false;
-    const txt = String(motTexte).trim().toUpperCase();
-    const col = String(couleurNom).trim().toLowerCase();
-    const idx = nom.indexOf(txt);
-    if (idx === -1) return false;
-    return couleur[idx].toLowerCase() === col;
+    const idx = nom.indexOf(motTexte);
+    console.log(`idx: ${idx}`);
+    console.log(`couleur[idx]: ${couleur[idx]}`);
+    console.log(`couleurNom: ${couleurNom}`);
+    return couleur[idx] == couleurNom;
 }
 
 function mise_a_jourScores() {
@@ -90,16 +89,16 @@ function handleAnswer(side, answerYes) {
     // passe au suivant
     if (side === 'left') {
         if (isCorrect) {
-            if(leftStreak<5) leftStreak++;                     
-            leftScore += 100 * leftStreak;         
+            leftScore += 100 * leftStreak;  
+            if(leftStreak<5) leftStreak++;        
         }else{
             leftStreak = 1;
         }
         mot(g1); motCouleur(g2);
     }else {
         if (isCorrect) if (isCorrect) {
-            if(rightStreak<5) rightStreak++;
             rightScore += 100 * rightStreak;
+            if(rightStreak<5) rightStreak++;
         }else{
             rightStreak = 1;
         }
