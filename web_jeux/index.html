@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Play -->
+    <main id="page1" class="menu">
+        <h1>Jeux de réflexe</h1>
+        <button id="play" aria-label="Jouer">
+        <img src="img/play.svg" width="60" alt="Play">
+        </button>
+    </main>
+
+    <!-- JEU -->
+    <section id="page2" class="hidden">
+        <header class="en_ligne">
+            <div>
+                <boutton id="pause" class="_espace">
+                    <img src="img/play.svg" width="33px" height="33px">
+                </boutton>
+                <boutton id="arrow" class="_espace">
+                    <img src="img/arrow.svg" width="33px">
+                </boutton>
+            </div>
+            <h1>Jeux de réflexe</h1>
+            <boutton id="regle" class="espace_">
+                <img src="img/game.svg" width="33px">
+            </boutton>
+        </header>
+
+        <div id="terrain">
+            <div class="en_ligne">
+                <div id="scoreG" class="score _espace centre"></div>
+                <div id="time" class="score centre"></div>
+                <div id="scoreD" class="score espace_ centre"></div>
+            </div>
+            <div class="en_ligne">
+                <div id="puissanceG" class="puissance _espace centre"></div>
+                <div class="textGrand" aria-hidden="true">oui/non</div>
+                <div id="puissanceD" class="puissance espace_ centre"></div>
+            </div>
+
+            <div class = "centre_rec">
+                <div id="gauche">
+                    <div aria-hidden="true">Signification</div>
+                    <div id ="g1" class="rectangle centre"></div>
+                    
+                    <div id ="g2" class="rectangle centre"></div>
+                    <div aria-hidden="true">Couleur du texte</div>
+                    <div class="textGrand" aria-hidden="true">Joueur1: Q/D</div>
+                </div>
+                <div id="droite">
+                    <div aria-hidden="true">Signification</div>
+                    <div id ="d1" class="rectangle centre"></div>
+                    
+                    <div id ="d2" class="rectangle centre"></div>
+                    <div aria-hidden="true">Couleur du texte</div>
+                    <div class="textGrand" aria-hidden="true">Joueur2: J/L</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page3" class="hidden">
+        <header class="en_ligne">
+            <div>
+                <boutton id="backRegle" class="_espace" aria-label="Retour">
+                    <img src="img/left.svg" width="33" alt="Retour">
+                </boutton>
+            </div>
+            <h1>Consignes</h1>
+            <div style="width:44px"></div>
+        </header>
+
+        <div id="rules-content" style="padding:20px; max-width:900px; margin:0 auto;">
+            <h2>Règles du jeu</h2>
+            <ul>
+                <li>Pour avoir bon, il faut que le mot du haut corresponde à la couleur du bas.</li>
+                <li>Deux joueurs : Joueur 1 (gauche) et Joueur 2 (droite).</li>
+                <li>Joueur 1 : appuie sur <strong>Q</strong> pour "oui" et sur <strong>D</strong> pour "non".</li>
+                <li>Joueur 2 : appuie sur <strong>J</strong> pour "oui" et sur <strong>L</strong> pour "non".</li>
+                <li>Chaque bonne réponse augmente ta "puissance" et multiplie les points gagnés (max 5).</li>
+            </ul>
+
+            <h3>Conseils</h3>
+            <ul>
+                <li>Regarde le mot (signification) et la couleur du texte pour décider.</li>
+                <li>La couleur affichée est comparée au mot (ex : signification "ROUGE" et couleur "ROUGE" = vrai).</li>
+            </ul>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

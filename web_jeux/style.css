@@ -1,0 +1,139 @@
+body, html{
+    background-color: #c5cfff;
+    margin: 0;
+    padding: 0;
+    color: #6a7192;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.textGrand{
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 20px);
+}
+
+.centre_rec{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.en_ligne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.espace_{
+    margin-right: 1rem;
+}
+
+._espace{
+    margin-left: 1rem;   
+}
+
+.divise2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#terrain{
+    height: 77vh;
+    width: 100%;
+    background-color: #95b7eb;
+}
+
+
+.score{
+    margin-top: 2%;
+    width: 110px;
+    height: 30px;
+    background-color: #333;
+    color: #c3d9ff;
+    border-radius: 5px;
+}
+
+.puissance{
+    margin-top: 1%;
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    color: #c3d9ff;
+    border-radius: 5px;    
+}
+
+.rectangle{
+    width: 200px;
+    height: 100px;
+    background-color: #6a7192;
+    color: #333;
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 40px);
+}
+
+#gauche, #droite{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    height: 240px;
+    gap: 12px;
+}
+
+.menu { 
+    height:100vh; 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center; 
+    align-items:center; 
+    gap:20px; 
+}
+
+#play { 
+    width:120px; 
+    height:120px; 
+    border-radius:12px;
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    background:#6a7192; 
+    border:none; 
+    cursor:pointer; 
+}
+
+.hidden { 
+    display: none !important; 
+} 
+
+
+#page3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,245,255,0.9));
+}
+
+#rules-content h2 {
+    color: #3f4e69;
+    margin-top: 8px;
+}
+
+#rules-content ul {
+    color: #334158;
+    line-height: 1.5;
+}
+
+#backRegle, #backRegleBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
